@@ -210,3 +210,27 @@ data/
 models/
 *.pth
 *.zip
+# --- MVP Ultrasound Project Custom Rules ---
+
+# Ignore all raw data and processed files
+data/
+!data/README.md  # можно оставить пояснение в data/
+
+# Ignore trained models and weights
+models/
+*.pth
+*.pt
+
+# Ignore temporary notebooks, logs, and cache
+*.ipynb_checkpoints
+__pycache__/
+*.log
+*.tmp
+*.bak
+
+# Ignore environment and system files
+.conda/
+env/
+venv/
+.DS_Store
+Thumbs.db
